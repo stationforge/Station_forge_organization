@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.padding {
+  padding-right: 1vw;
+  padding-left: 1vw;
+}
+.border2 {
+  border: 1px solid red;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* fonts styling */
+@font-face {
+  font-family: "neuebold"; /* You can choose a name for your font */
+  src: url("/fonts/NeueMontreal-Bold.otf") format("opentype"); /* Path to your OTF font file */
+  font-weight: bolder;
+}
+@font-face {
+  font-family: "neueregular"; /* You can choose a name for your font */
+  src: url("/fonts/NeueMontreal-Regular.otf") format("opentype"); /* Path to your OTF font file */
+
+  font-style: normal;
+}
+@font-face {
+  font-family: "neuemedium"; /* You can choose a name for your font */
+  src: url("/fonts/NeueMontreal-Medium.otf") format("opentype"); /* Path to your OTF font file */
+  font-weight: normal;
+}
+
+.neueb {
+  font-family: "neuebold", sans-serif;
+}
+.neuer {
+  font-family: "neueregular", sans-serif;
+}
+.neuem {
+  font-family: "neuemedium", sans-serif;
+}
+
+/* for the avatar styling */
+.avater_bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.subscription_merchant_background_color {
+  background: linear-gradient(
+    180deg,
+    #fcdcf8 0.02%,
+    #fffdd8 52.83%,
+    #fff 106.69%
+  );
+}
+
+/* hide the height */
+.add_onboarding {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.less_scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.less_scrollbar::-webkit-scrollbar-track {
+  border-radius: 50%;
+  background: #cf0;
+}
+
+.less_scrollbar::-webkit-scrollbar-thumb {
+  background: #cf0;
+  width: 10px;
+  height: 10px;
+  /* border-radius: 100vh;
+    border: 3px solid #f6f7ed; */
+}
+
+.less_scrollbar::-webkit-scrollbar-thumb:hover {
+  width: 1px;
+  height: 1px;
+  background: #cf0;
+}
+
+@keyframes next_1 {
+  0% {
+    bottom: -15vw;
+    right: 4.1vw;
+  }
+
+  50% {
+    bottom: -40.4vw;
+    right: 73.5vw;
+  }
+  100% {
+    bottom: -40.4vw;
+    right: 73.5vw;
+    /* opacity: 0; */
+  }
+}
+@keyframes next_2 {
+  0% {
+    opacity: 1;
+    bottom: -38.4vw;
+    right: 73.5vw;
+  }
+
+  50% {
+    bottom: -35vw;
+    right: 4vw;
+  }
+  100% {
+    bottom: -35vw;
+    right: 4vw;
+    /* opacity: 0; */
+  }
+}
+@keyframes next_3 {
+  0% {
+    opacity: 1;
+    bottom: -35vw;
+    right: 4vw;
+  }
+
+  50% {
+    opacity: 1;
+    bottom: -24.8vw;
+    right: 48vw;
+  }
+  100% {
+    bottom: -24.8vw;
+    right: 48vw;
+    /* opacity: 0; */
+  }
+}
+
+.animate_next_1 {
+  animation-name: next_1;
+  animation-duration: 2s; /* Duration of the animation */
+  animation-timing-function: ease; /* Timing function (e.g., ease, linear, ease-in-out) */
+  animation-delay: 0s; /* Delay before the animation starts (if needed) */
+  animation-iteration-count: 1; /* Number of times the animation should run (1 for once) */
+  animation-direction: normal; /* Animation direction (normal, reverse, alternate, etc.) */
+  animation-fill-mode: forwards;
+}
+.animate_next_2 {
+  animation-name: next_2;
+  animation-duration: 2s; /* Duration of the animation */
+  animation-timing-function: ease; /* Timing function (e.g., ease, linear, ease-in-out) */
+  animation-delay: 0s; /* Delay before the animation starts (if needed) */
+  animation-iteration-count: 1; /* Number of times the animation should run (1 for once) */
+  animation-direction: normal; /* Animation direction (normal, reverse, alternate, etc.) */
+  animation-fill-mode: forwards;
+}
+.animate_next_3 {
+  animation-name: next_3;
+  animation-duration: 2s; /* Duration of the animation */
+  animation-timing-function: ease; /* Timing function (e.g., ease, linear, ease-in-out) */
+  animation-delay: 0s; /* Delay before the animation starts (if needed) */
+  animation-iteration-count: 1; /* Number of times the animation should run (1 for once) */
+  animation-direction: normal; /* Animation direction (normal, reverse, alternate, etc.) */
+  animation-fill-mode: forwards;
+}
+
+/* scrollbar hiding for comment section */
+
+/* Hide scrollbar */
+/* .scroll-container::-webkit-scrollbar {
+  width: 1vw;
+  background-color: transparent;
+  height: fit-content;
+  color: transparent;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.196);
+  border-radius: 1vw;
+}
+
+html.scroll-container {
+  scrollbar-width: 1vw;
+  scrollbar-color: rgba(255, 255, 255, 0.196);
+} */
+
+/* Hide scrollbar */
+.scroll-container::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1vw;
+}
+.scroll-container_search_items::-webkit-scrollbar-thumb {
+  background: #ccff00;
+  border-radius: 2vw;
+}
+.admin_scroll_container::-webkit-scrollbar {
+  width: 0.2rem;
+  /* height: 0.5vw; */
+}
+
+.admin_scroll_container::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 1vw;
+}
+.admin_scroll_container_search_items::-webkit-scrollbar-thumb {
+  background: #ccff00;
+  border-radius: 2vw;
+}
+
+@media screen and (max-width: 650px) {
+  .admin_scroll_container::-webkit-scrollbar {
+    width: 1vw;
+    height: 2vw;
+  }
+}
+
+html.scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.cover_scrollbar::-webkit-scrollbar {
+  width: 0.1em;
+}
+
+.cover_scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.cover_scrollbar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
