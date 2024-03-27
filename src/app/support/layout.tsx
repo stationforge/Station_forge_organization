@@ -1,10 +1,7 @@
 /* styles.css */
 import "bootstrap-icons/font/bootstrap-icons.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { Profile_Context_Dropdown } from "../utils/profile_context";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Forge Support - Get Help and Assistance",
